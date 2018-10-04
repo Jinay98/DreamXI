@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@drawable/gradient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:orientation="horizontal"
+                android:layout_above="@+id/linearLayout">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="205dp"
+                    android:layout_above="@+id/linearLayout" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnChoose"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/roundedbutton"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Choose"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/btnUpload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/roundedbutton"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Upload"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+
+
+            <EditText
+                android:id="@+id/editTextplayerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:hint="Player Name"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editTextposition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textColor="#ffffff"
+                android:hint="Position"
+                android:textColorHint="#ffffff"
+                android:inputType="text"
+                android:selectAllOnFocus="false"
+                android:singleLine="false" />
+
+            <EditText
+                android:id="@+id/editTextage"
+                android:layout_width="match_parent"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:hint="Age"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editTextbattingpts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_margin="15dp"
+                android:textColorHint="#ffffff"
+                android:hint="Batting Points"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editTextbowlingpts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_margin="15dp"
+                android:hint="Bowling Points"
+                android:textColorHint="#ffffff"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editTextallrounderpts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_margin="15dp"
+                android:hint="All Rounder Points"
+                android:textColorHint="#ffffff"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/addbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="#f70909"
+                android:textColor="#ffffff"
+                android:text="Add player to DB" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
